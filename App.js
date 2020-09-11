@@ -1,4 +1,4 @@
-import App from './app/index';
+import App from "./app/index";
 
 //now this is sample after we are going to delete
 //import {createAppContainer} from 'react-navigation';
@@ -6,7 +6,8 @@ import App from './app/index';
 //import {Dimensions} from 'react-native';
 //import {Feather} from '@expo/vector-icons';
 
-{/*
+{
+    /*
 
     const DrawerNavigator = createDrawerNavigator(
         {
@@ -60,5 +61,6 @@ import App from './app/index';
         }
     )
     
-*/}
+*/
+}
 export default App;

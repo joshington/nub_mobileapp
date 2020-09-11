@@ -1,26 +1,23 @@
-import {StyleSheet} from 'react-native';
-
-export default styles ={
+export default {
     container: {
-        flex:1
+        flex: 1,
     },
     profile: {
-        width:80,
+        width: 80,
         height: 80,
         borderRadius: 40,
-        borderWidth:3,
+        borderWidth: 3,
         borderColor: "#FFF",
     },
-    name:{
-        color:"#FFF",
+    name: {
+        color: "#FFF",
         fontSize: 20,
-        fontWeight:"800",
-        marginVertical:8,
+        fontWeight: "800",
+        marginVertical: 8,
     },
-    followers:{
-        color:"rgba(255,255,255,0.8",
-        fontSize:13,
-        marginRight:4
-    }
-}
-    
+    followers: {
+        color: "rgba(255,255,255,0.8",
+        fontSize: 13,
+        marginRight: 4,
+    },
+};

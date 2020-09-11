@@ -1,22 +1,22 @@
-import EStyleSheet from 'react-native-extended-stylesheet';
+import EStyleSheet from "react-native-extended-stylesheet";
 
 export default EStyleSheet.create({
     containerList: {
-        flex:1,
-        flexDirection: 'row',
-        alignItems:'center',
-        justifyContent: 'center',
-        flexWrap: 'wrap',
-        marginTop:20,
-        backgroundColor:'$primaryBlueHome',
+        flex: 1,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "center",
+        flexWrap: "wrap",
+        marginTop: 20,
+        backgroundColor: "$primaryBlueHome",
     },
-    image:{
+    image: {
         flex: 1,
         resizeMode: "cover",
         justifyContent: "center",
-        flexWrap: 'wrap',
+        flexWrap: "wrap",
     },
-    eventContainer:{
-        backgroundColor:'$primaryBlue',
-    }
-})
+    eventContainer: {
+        backgroundColor: "$primaryBlue",
+    },
+});
