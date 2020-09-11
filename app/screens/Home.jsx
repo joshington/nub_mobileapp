@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import PayWithFlutterwave from "flutterwave-react-native";
 import Logo from "../components/Logo/Logo";
 import Card from "../components/ListCard/Card";
 import { Feather } from "@expo/vector-icons";
@@ -10,9 +9,6 @@ import { MaterialCommunityIcons } from "@expo/vector-icons";
 import connectAlert from "../components/Alert/connectAlert";
 import CardContainer from "../components/ListContainer/CardContainer";
 //import DonateScreen from './DonateScreen';
-import { TouchableOpacity, StyleSheet, Text } from "react-native";
-
-const styles = StyleSheet.create({});
 
 class Home extends Component {
     static propTypes = {
@@ -45,45 +41,28 @@ class Home extends Component {
         this.props.navigation.navigate("Login");
     };
 
-    getDonations = () => {
-        return (
-            <PayWithFlutterwave
-                onComplete={console.log("done payments")}
-                onRedirect={() => this.props.navigation.goBack()}
-                options={{
-                    tx_ref: "5799821",
-                    authorization:
-                        "[FLWSECK_TEST-e0cbc06d58428b734f5caa144be6cbb7-X]",
-                    customer: {
-                        email: "bbosalj@gmail.com",
-                    },
-                    amount: 50000,
-                    currency: "NGN",
-                    payment_options: "card",
-                }}
-                customButton={(props) => (
-                    <TouchableOpacity
-                        style={styles.paymentButton}
-                        onPress={this.getDonations}
-                        isBusy={props.isInitializing}
-                        disabled={props.disabled}
-                    >
-                        <Text style={styles.paymentButtonText}>Pay $500</Text>
-                    </TouchableOpacity>
-                )}
-            />
-        );
+    handleRedirect({ status, transaction_id, tx_ref }) {
+        console.log(`Status: ${status}\nID: ${transaction_id}\nRef: ${tx_ref}`);
+    }
+
+    makeRef = (length) => {
+        let result = "";
+        const characters =
+            "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        const charactersLength = characters.length;
+        for (let i = 0; i < length; i += 1) {
+            result += characters.charAt(
+                Math.floor(Math.random() * charactersLength)
+            );
+        }
+        return result;
     };
+
+    getDonations = () => this.props.navigation.navigate("Donate");
 
     render() {
         return (
             <>
-                {/*
-                <View style={{paddingHorizontal:30,paddingTop:80,paddingBottom:0,
-                    alignItems:'center',marginBottom:18}}>
-                    <Logo addStyles={true} />
-                </View> 
-                */}
                 <Logo addStyles={true} />
                 <CardContainer>
                     {/*target is to make the divs two in a row.*/}
@@ -96,6 +75,7 @@ class Home extends Component {
                         }
                         alternate={false}
                     />
+
                     <Card
                         text="Events"
                         onPress={this.getPartyEvents}
@@ -109,6 +89,7 @@ class Home extends Component {
                         }
                         alternate={false}
                     />
+
                     <Card
                         text="Donate"
                         onPress={this.getDonations}
@@ -123,6 +104,7 @@ class Home extends Component {
                         alternate={true}
                         altercolm={true}
                     />
+
                     <Card
                         text="My Account"
                         onPress={this.getMyAccount}
