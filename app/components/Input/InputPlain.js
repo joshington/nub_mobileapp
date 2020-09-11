@@ -28,7 +28,7 @@ class InputPlain extends Component{
                                 formikProps={formikProps}
                                 formikKey="Username"
                                 placeholder="Enter Username"
-                                placeholderTextColor="#000000"
+                                placeholderTextColor="#FF033E"
                                 underlineColorAndroid="#000000"
                                 autoFocus
                             />
@@ -37,7 +37,7 @@ class InputPlain extends Component{
                                 formikProps={formikProps}
                                 formikKey="Contact"
                                 placeholder="Contact  here"
-                                placeholderTextColor="#000000"
+                                placeholderTextColor="#FF033E"
                                 underlineColorAndroid="#000000"
                                 autoFocus
                             />

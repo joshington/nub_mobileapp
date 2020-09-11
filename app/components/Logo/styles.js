@@ -11,16 +11,25 @@ export default EStyleSheet.create({
         alignItems:'center',
     },
     cardLogo:{
-        paddingTop:60,
+        paddingTop:20,
         alignItems:'center',
-        marginLeft:40,
+        marginLeft:100,
         justifyContent:'center',
-    
+        paddingRight:80,
+    },
+    profileLogo:{
+        justifyContent:'center',
+        margin:20,
+        marginBottom:10,
+        alignItems:'center',
     },
     memberText: {
         color: '$memberText',
         fontSize: 15,
         textAlign: 'center',
         paddingTop:10,
+    },
+    settings:{
+        
     }
 })

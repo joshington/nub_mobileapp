@@ -1,16 +1,18 @@
 import React , {Component} from 'react';
 import PropTypes from 'prop-types';
-import {View} from 'react-native';
+import {View,ImageBackground} from 'react-native';
 import styles from './styles';
 
-const ListContainer = ({children}) => (
+
+const path = './images/bobi_another.png'
+const CardContainer = ({children}) => (
     <View style={styles.containerList}>
         {children}
     </View>
 )
 
-ListContainer.propTypes = {
+CardContainer.propTypes = {
     children: PropTypes.any,
 }
 
-export default ListContainer;
+export default CardContainer;

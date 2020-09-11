@@ -13,7 +13,9 @@ const InputWithButton = (props) => {
     );
     return (
         <View style={styles.container}>
-            <TouchableHighlight underlayColor={underlayColor}  style={styles.buttonContainer}>
+            <TouchableHighlight underlayColor={underlayColor}  style={styles.buttonContainer} 
+                onPress={onPress}
+            >
                 <Text style={styles.buttonText}>{buttonText}</Text>
             </TouchableHighlight>
         </View>

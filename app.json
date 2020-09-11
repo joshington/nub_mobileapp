@@ -4,11 +4,11 @@
     "slug": "nup",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/peoplepower.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/nup_edited.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#FF033E"
     },
     "updates": {
       "fallbackToCacheTimeout": 0

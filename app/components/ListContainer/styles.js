@@ -5,8 +5,18 @@ export default EStyleSheet.create({
         flex:1,
         flexDirection: 'row',
         alignItems:'center',
-        justifyContent: 'space-between',
-        backgroundColor: '$memberText',
-        paddingTop:0,
+        justifyContent: 'center',
+        flexWrap: 'wrap',
+        marginTop:20,
+        backgroundColor:'$primaryBlueHome',
     },
+    image:{
+        flex: 1,
+        resizeMode: "cover",
+        justifyContent: "center",
+        flexWrap: 'wrap',
+    },
+    eventContainer:{
+        backgroundColor:'$primaryBlue',
+    }
 })

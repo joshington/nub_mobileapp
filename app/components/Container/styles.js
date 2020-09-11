@@ -7,4 +7,16 @@ export default EStyleSheet.create({
         justifyContent: 'center',
         backgroundColor:  '$primaryBlue',
     },
+    settings:{
+        backgroundColor:'$primaryBlue',
+        paddingTop:3,
+    },
+    profile:{
+        backgroundColor:'#D0D0D1',
+        marginLeft:10,
+        marginRight:10,
+        borderRadius:10,
+        height:'50%',
+
+    }
 })
