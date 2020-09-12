@@ -1,29 +1,28 @@
-import EStyleSheet from 'react-native-extended-stylesheet';
+import EStyleSheet from "react-native-extended-stylesheet";
 
 export default EStyleSheet.create({
     container: {
-        flex:1,
-        flexDirection:'row',
-        alignItems:'center',
-        justifyContent: 'space-between',
+        flex: 1,
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-between",
         //backgroundColor:  '$primaryBlue',
-        marginTop:12,
-        padding:7,
+        marginTop: 12,
+        padding: 7,
     },
-    text:{
-        fontSize:25,
-        marginLeft:5,
+    text: {
+        fontSize: 25,
+        marginLeft: 5,
     },
-    textEdit:{
-        fontSize:25,
-        marginRight:20,
-        color:'$primaryColor'
-
+    textEdit: {
+        fontSize: 25,
+        marginRight: 20,
+        color: "$primaryColor",
     },
-    button:{
+    button: {
         //backgroundColor:'$primaryBlue',
         //alignSelf:'flex-end',
-        marginLeft:150,
-        marginRight:2,
+        marginLeft: 150,
+        marginRight: 2,
     },
-})
+});
