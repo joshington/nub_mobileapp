@@ -222,7 +222,7 @@ const DonateScreen = () => {
                     options={{
                         tx_ref: makeid(10),
                         authorization:
-                            "FLWSECK_TEST-e0cbc06d58428b734f5caa144be6cbb7-X",
+                            "FLWSECK-fb84a1e44e30ca59201ab63a8f5dca4e-X",
                         customer: {
                             email,
                             name,
